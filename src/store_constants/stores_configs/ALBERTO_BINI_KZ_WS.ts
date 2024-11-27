@@ -15,31 +15,19 @@ export const ALBERTO_BINI_KZ_WS = {
     telegram_sender: true,
     managers: [
         {
-            firstName: 'Natalya',
-            lastName: '',
-            emailAddress: 'natalya9899@gmail.com',
-            options: { manager: true },
-            contacts: {
-                emailAddress: 'natalya9899@gmail.com',
-                phone: '+380961234858',
-                viber: '+380961234858',
-                whatsapp: '+380961234858',
-                telegram: '',
-            },
-        },
-        {
-            firstName: 'Elena',
+            firstName: 'Alberto Bini Manager',
             lastName: '',
             emailAddress: '',
             options: { manager: true },
             contacts: {
                 emailAddress: '',
-                phone: '+380983080085',
-                viber: '+380983080085',
-                whatsapp: '+380983080085',
-                telegram: 'Albertobiniopt',
+                phone:'+905367979030',
+                viber:'+905367979030',
+                whatsapp: '',
+                telegram: '',
             },
         },
+
     ],
     options: {
         no_reg_order: true,
