@@ -2,7 +2,7 @@ import { StoreType, ViewModeType } from 'store_constants/types';
 
 export const ALBERTO_BINI_KZ_WS = {
     storage_key: 'ab_kz-ws',
-    active: false, // Поле которое запускает магазин true - работает false - остановлен / по тех. причина
+    active: true, // Поле которое запускает магазин true - работает false - остановлен / по тех. причина
     status: null,
     required_registration: false,
     URL: ['https://albertobini-kz.com', 'https://albertobini-kz.netlify.app'],
