@@ -24,8 +24,6 @@ import { AxiosResponse } from 'axios';
 import { LanguageDataInterface } from 'hooks/useGetLanguage';
 import { useFavorites } from 'layouts/hooks/useFavorites';
 import Loader from 'components/atoms/Loader/Loader';
-import { telegramSender } from 'utils/telegramSender';
-import { useIsMount } from 'hooks/useIsMount';
 
 interface Props {
     apiToken: string | null;
@@ -105,7 +103,7 @@ export default function MainCatalog({
         store: STORE_CODE,
     });
 
-    const mount = useIsMount();
+
 
     const { isLoadingFavorites, favoritesList, fetchFavoriteProducts } = useFavorites({
         lang,
@@ -118,13 +116,7 @@ export default function MainCatalog({
         store: STORE_CODE,
     });
 
-    useEffect(() => {
-        if (mount) return;
-        telegramSender({
-            action: `ЗАШЕЛ НА ЛИСТИНГ ${window.location.origin}`,
-            name: 'listing',
-        });
-    }, [mount]);
+
 
     useEffect(() => {
         if (STORE_CODE !== storeCode) {

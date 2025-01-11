@@ -6,7 +6,7 @@ import { KREMEN_BELTS_MAIN } from './KREMEN_BELTS_MAIN'; // eslint-disable-line
 
 export const DEVELOP_STORE = {
     ...ALBERTO_BINI_MAIN,
-    ...ALBERTO_BINI_KZ_WS,
+    // ...ALBERTO_BINI_KZ_WS,
     // ...ALBERTO_BINI_SALES,
     // ...KREMEN_BELTS_MAIN,
 

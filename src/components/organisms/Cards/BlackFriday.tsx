@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
+import { useOutletContext } from 'react-router-dom';
 
 const BlackFriday = ({ price, discountPrice }) => {
     const discountPercentage = Math.floor(((price - discountPrice) / price) * 100);
-
+    const { string }: any = useOutletContext();
     if (!discountPercentage) return null;
 
     return (
@@ -15,9 +16,9 @@ const BlackFriday = ({ price, discountPrice }) => {
                     right: 0,
                     top: 0,
                     zIndex: 1,
-                    width: 22,
+                    width: 16,
                     height: '100%',
-                    background: 'linear-gradient(135deg, #ff0000 10%, #000000 80%)',
+                    background: 'linear-gradient(135deg, #d14242 10%, #000000 120%)',
 
                     display: 'flex',
                     alignItems: 'center',
@@ -41,7 +42,7 @@ const BlackFriday = ({ price, discountPrice }) => {
                         fontWeight: 500,
                     }}
                 >
-                    Black _ Friday
+                    {string?.sale}
                 </Typography>
             </Box>
             <Box
@@ -52,7 +53,7 @@ const BlackFriday = ({ price, discountPrice }) => {
                     zIndex: 1,
                     width: 44,
                     height: 28,
-                    background: 'linear-gradient(25deg, #a0a0a0 10%, #000000 50%)',
+                    background: '#ec2121',
                     borderRadius: 2,
                     display: 'flex',
                     alignItems: 'center',

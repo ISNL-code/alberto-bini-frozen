@@ -1,12 +1,12 @@
 import { createTheme } from '@mui/material';
-import { indigo, grey, lightGreen, red, green } from '@mui/material/colors';
+import {  grey, lightGreen, red, green, blueGrey} from '@mui/material/colors';
 
 const mainTheme = createTheme({
     palette: {
         primary: {
-            main: indigo[500],
-            light: indigo[50],
-            dark: indigo[800],
+            main: blueGrey[500],
+            light: blueGrey[50],
+            dark: blueGrey[800],
         },
         success: {
             main: lightGreen[800],
