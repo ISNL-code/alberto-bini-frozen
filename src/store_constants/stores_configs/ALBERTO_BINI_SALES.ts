@@ -5,7 +5,7 @@ export const ALBERTO_BINI_SALES = {
   active: true, // Поле которое запускает магазин true - работает false - остановлен / по тех. причина
   status: null,
   required_registration: false,
-  URL: ["https://alb-sales.netlify.app"],
+  URL: ["https://albertobini-sales.netlify.app"],
   web_lang: "uk", // html lang
   store_name: "АБ ОПТ СТОКОВЫЙ",
   store_code: "ALBERTO_BINI_SALES",
