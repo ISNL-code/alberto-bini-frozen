@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  Dialog,
-  ClickAwayListener,
-  IconButton,
-  CircularProgress,
-  Box,
-} from "@mui/material";
+import { Dialog, ClickAwayListener, IconButton, Box } from "@mui/material";
 import { Color, Colors } from "constants/colors";
 import { DialogStateInterface } from "types/app_models";
 import CloseIcon from "@mui/icons-material/Close";
