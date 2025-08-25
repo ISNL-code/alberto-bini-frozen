@@ -9,6 +9,7 @@ import {
 import { Color, Colors } from "constants/colors";
 import { DialogStateInterface } from "types/app_models";
 import CloseIcon from "@mui/icons-material/Close";
+import Loader from "components/atoms/Loader/Loader";
 
 interface Props {
   string; // локализованные строки (например, "video_preview")
@@ -40,20 +41,7 @@ const VideoDialog = ({
 
   return (
     <>
-      {!videoLoaded && (
-        <CircularProgress
-          sx={{
-            color: Color?.PRIMARY,
-            zIndex: 5000,
-            position: "fixed",
-            top: "50%",
-            left: "46%",
-            p: 0,
-            m: 0,
-          }}
-          thickness={2}
-        />
-      )}
+      {!videoLoaded && <Loader />}
 
       <ClickAwayListener
         onClickAway={() => {
@@ -76,7 +64,7 @@ const VideoDialog = ({
               sx: {
                 borderRadius: 4,
                 overflow: "hidden",
-                border: `0.5px solid ${Colors?.GRAY_300}`,
+                border: "none",
                 mx: 0.5,
                 position: "relative",
               },
@@ -130,10 +118,11 @@ const VideoDialog = ({
                 style={{ maxWidth: "100vw", width: "100%" }}
                 src={dialogState?.videoUrl || ""}
                 controls
-                autoPlay
+                autoPlay={false}
                 preload="metadata" // грузит только заголовки и первый кадр
                 playsInline // важно для iOS, иначе ждёт fullscreen
                 onLoadedData={() => setVideoLoaded(true)}
+                loop
               />
             </Box>
           </Dialog>
