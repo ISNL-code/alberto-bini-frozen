@@ -130,7 +130,7 @@ const VideoDialog = ({
                 style={{ maxWidth: "100vw", width: "100%" }}
                 src={dialogState?.videoUrl || ""}
                 controls
-                autoPlay={false}
+                autoPlay
                 preload="metadata" // грузит только заголовки и первый кадр
                 playsInline // важно для iOS, иначе ждёт fullscreen
                 onLoadedData={() => setVideoLoaded(true)}
