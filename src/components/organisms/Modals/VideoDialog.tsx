@@ -27,7 +27,7 @@ const VideoDialog = ({
 }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
-
+  const [showControls, setShowControls] = useState(true);
   const handleClose = () => {
     setOpen(false);
     onClose();
@@ -129,7 +129,8 @@ const VideoDialog = ({
               <video
                 style={{ maxWidth: "100vw", width: "100%" }}
                 src={dialogState?.videoUrl || ""}
-                controls
+                controls={showControls}
+                onPlay={() => setTimeout(() => setShowControls(false), 500)} // убираем контролы через 0.5 сек
                 autoPlay
                 preload="metadata" // грузит только заголовки и первый кадр
                 playsInline // важно для iOS, иначе ждёт fullscreen
