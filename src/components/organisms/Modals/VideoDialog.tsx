@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
-import { Dialog, ClickAwayListener, IconButton, Box } from "@mui/material";
+import {
+  Dialog,
+  ClickAwayListener,
+  IconButton,
+  CircularProgress,
+  Box,
+} from "@mui/material";
 import { Color, Colors } from "constants/colors";
 import { DialogStateInterface } from "types/app_models";
 import CloseIcon from "@mui/icons-material/Close";
-import Loader from "components/atoms/Loader/Loader";
 
 interface Props {
   string; // локализованные строки (например, "video_preview")
@@ -35,7 +40,20 @@ const VideoDialog = ({
 
   return (
     <>
-      {!videoLoaded && <Loader />}
+      {!videoLoaded && (
+        <CircularProgress
+          sx={{
+            color: Color?.PRIMARY,
+            zIndex: 5000,
+            position: "fixed",
+            top: "50%",
+            left: "46%",
+            p: 0,
+            m: 0,
+          }}
+          thickness={2}
+        />
+      )}
 
       <ClickAwayListener
         onClickAway={() => {
