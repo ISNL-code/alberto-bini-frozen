@@ -1,6 +1,7 @@
 import { Box, Divider, Typography, IconButton } from "@mui/material";
 import PromoTags from "components/atoms/PromoTags/PromoTags";
 import SaleTag from "components/atoms/PromoTags/SaleTag";
+
 import { STORE_CONFIG } from "store_constants/stores_config";
 import { StoreType } from "store_constants/types";
 import {
@@ -58,6 +59,7 @@ const TitleDetails = ({ productDetails, selectedVariant, videoUrl }: Props) => {
               sx={{
                 ml: "auto",
                 borderRadius: 2,
+                height: 30,
               }}
             >
               <YouTubeIcon
