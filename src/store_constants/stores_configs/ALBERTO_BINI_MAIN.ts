@@ -82,7 +82,7 @@ export const ALBERTO_BINI_MAIN = {
     currency_multiplication: 1,
     retail_price_multiplication: 1,
     min_items_to_buy: 5,
-    store_type: StoreType?.sales,
+    store_type: StoreType?.wholesales,
     informative_page_active: true,
     custom_currency: "$",
     custom_logo: true,
