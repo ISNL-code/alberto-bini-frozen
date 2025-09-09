@@ -77,6 +77,7 @@ const UserOrders = () => {
         const status = handleGetStatusParams(order?.orderStatus, string);
         return (
           <Grid
+            className="orderContainer"
             key={idx}
             pt={1}
             container
@@ -173,7 +174,7 @@ const UserOrders = () => {
                   maxHeight:
                     isOpenDetails.open &&
                     String(isOpenDetails?.id) === String(order?.id)
-                      ? "1000px"
+                      ? "auto"
                       : "0px",
                   overflow: "hidden",
                   transition:
