@@ -5,7 +5,7 @@ export const STONED_CLUB = {
   active: true, // Поле которое запускает магазин true - работает false - остановлен / по тех. причина
   status: null,
   required_registration: false,
-  URL: ["https://stoned_club.netlify.app"],
+  URL: ["https://stoned-club.netlify.app"],
   web_lang: "uk", // html lang
   store_name: "STONED CLUB",
   store_code: "stoned_club",
