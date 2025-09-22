@@ -9,7 +9,7 @@ import {
   useState,
 } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
-import ColorIndicatorButton from "components/atoms/ColorIndicatorButton/ColorIndicatorButton";
+// import ColorIndicatorButton from "components/atoms/ColorIndicatorButton/ColorIndicatorButton";
 import CartButton from "components/molecules/ToolsButtons/CartButton";
 import FavoritesButton from "components/molecules/ToolsButtons/FavoritesButton";
 import {
@@ -81,7 +81,7 @@ const CatalogListCard = memo<CatalogCardProps>(
       handleSetDialogState,
       string,
     }: CatalogContextInterface = useOutletContext();
-    const colorsBoxRef = useRef(null);
+    // const colorsBoxRef = useRef(null);
     const [shownModel, setShownModel] =
       useState<ProductVariantInterface | null>(null);
     const [sliderHeight, setSliderHeight] = useState<number | string>(0);

@@ -3,7 +3,7 @@ import { STORE_CONFIG } from "store_constants/stores_config";
 import { useDevice } from "hooks/useDevice";
 import ActionSection from "./components/ActionSection";
 import ArticleDetails from "./components/ArticleDetails";
-import ColorsDetails from "./components/ColorsDetails";
+// import ColorsDetails from "./components/ColorsDetails";
 import DescriptionDetails from "./components/DescriptionDetails";
 import PriceDetails from "./components/PriceDetails";
 import SizesDetails from "./components/SizesDetails";
