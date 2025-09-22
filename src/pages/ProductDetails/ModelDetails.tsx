@@ -39,13 +39,13 @@ const ModelDetails = ({
           )}
         />
       </Box>
-      <Box>
+      {/* <Box>
         <ColorsDetails
           productDetails={productDetails}
           selectedVariant={selectedVariant}
           setSelectedVariant={setSelectedVariant}
         />
-      </Box>
+      </Box> */}
 
       <Box sx={{ display: "flex", gap: 1 }}>
         {PLAN_OPTIONS?.prices && (

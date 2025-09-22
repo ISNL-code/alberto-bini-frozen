@@ -304,7 +304,7 @@ const CatalogListCard = memo<CatalogCardProps>(
               </Box>
             </Box>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               height: 28,
               zIndex: 1,
@@ -372,8 +372,8 @@ const CatalogListCard = memo<CatalogCardProps>(
                   );
                 })}
               </Box>
-            </Box>
-          </Box>
+            </Box> 
+          </Box>*/}
 
           <Box onClick={(e) => e.stopPropagation()}>
             <Box
