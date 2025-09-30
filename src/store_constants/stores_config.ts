@@ -2,6 +2,7 @@ import { ALBERTO_BINI_KZ_WS } from "./stores_configs/ALBERTO_BINI_KZ_WS";
 import { ALBERTO_BINI_MAIN } from "./stores_configs/ALBERTO_BINI_MAIN";
 import { ALBERTO_BINI_SALES } from "./stores_configs/ALBERTO_BINI_SALES";
 import { DEVELOP_STORE } from "./stores_configs/A_DEVELOP_STORE";
+import { RETAIL_ALBERTO_BINI } from "./stores_configs/RETAIL_ALBERTO_BINI";
 import { STONED_CLUB } from "./stores_configs/STONED_CLUB";
 import { StoreType, STORE_CONFIG_Interface, ViewModeType } from "./types";
 
@@ -11,6 +12,7 @@ const stores = [
   ALBERTO_BINI_SALES,
   ALBERTO_BINI_KZ_WS,
   STONED_CLUB,
+  RETAIL_ALBERTO_BINI,
 ];
 
 const storeConfig = (): STORE_CONFIG_Interface => {
