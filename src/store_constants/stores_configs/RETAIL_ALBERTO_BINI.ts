@@ -3,9 +3,9 @@ import { StoreType, ViewModeType } from "store_constants/types";
 export const RETAIL_ALBERTO_BINI = {
   storage_key: "ab_ua-rt_my",
   active: true, // Поле которое запускает магазин true - работает false - остановлен / по тех. причина
-  status: "Технiчнi роботи",
+  status: null,
   required_registration: false,
-  URL: ["https://albertobini-brandeurope.com"],
+  URL: ["https://alberto-bini-shop.netlify.app"],
   web_lang: "uk", // html lang
   store_name: "АБ RETAIL_MY",
   store_code: "albertobini_retailer",
