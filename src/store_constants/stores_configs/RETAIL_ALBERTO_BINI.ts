@@ -61,7 +61,7 @@ export const RETAIL_ALBERTO_BINI = {
     currency_multiplication: 1,
     retail_price_multiplication: 1,
     min_items_to_buy: 1,
-    store_type: StoreType?.sales,
+    store_type: StoreType?.default,
     home_page_active: true,
     informative_page_active: true,
     custom_currency: "₴",
