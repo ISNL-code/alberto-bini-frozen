@@ -34,7 +34,7 @@ export const RETAIL_ALBERTO_BINI = {
       {
         token: "8118561264:AAFxhkoULSi9abzaTt9nHNFM6RCfBbBUV1M",
         chatId: "480774886",
-        items: ["order"],
+        items: ["order", "feedback_form"],
       },
       //LENA ALB
       {
@@ -42,6 +42,7 @@ export const RETAIL_ALBERTO_BINI = {
         token: "7926269233:AAFOApI-YISLrblBEfrogo22aiBuf_QV5gQ",
         items: [
           "order",
+          "feedback_form",
           // 'cocktail', 'register', 'feedback_form', 'price_request', 'login', `order`
         ],
       },
@@ -52,6 +53,7 @@ export const RETAIL_ALBERTO_BINI = {
         items: [
           // 'listing', 'cocktail', 'register', 'feedback_form', 'price_request', 'login',
           `order`,
+          "feedback_form",
         ],
       },
     ],
