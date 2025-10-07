@@ -34,7 +34,7 @@ export const RETAIL_ALBERTO_BINI = {
       {
         token: "8118561264:AAFxhkoULSi9abzaTt9nHNFM6RCfBbBUV1M",
         chatId: "480774886",
-        items: ["order", "feedback_form"],
+        items: ["order", "feedback_form", "listing"],
       },
       //LENA ALB
       {
