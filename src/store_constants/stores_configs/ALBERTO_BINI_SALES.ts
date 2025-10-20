@@ -7,7 +7,7 @@ export const ALBERTO_BINI_SALES = {
   required_registration: false,
   URL: ["https://albertobini-sales.netlify.app"],
   web_lang: "uk", // html lang
-  store_name: "АБ ОПТ СТОКОВЫЙ",
+  store_name: "СКИДОЧНЫЙ КАТАЛОГ",
   store_code: "ALBERTO_BINI_SALES",
   app_lang: "ua",
   supported_countries: [{ code: "UA", country: "ukraine" }],
@@ -43,30 +43,18 @@ export const ALBERTO_BINI_SALES = {
   options: {
     no_reg_order: true,
     telegram_bot: [
-      //MY ALB
       {
         token: "8118561264:AAFxhkoULSi9abzaTt9nHNFM6RCfBbBUV1M",
         chatId: "480774886",
-        items: [
-          "cart",
-          "listing",
-          "cocktail",
-          "register",
-          "feedback_form",
-          "price_request",
-          "login",
-          "order",
-          "error",
-          "add_favorites",
-          "add_cart",
-        ],
+        items: ["order", "feedback_form"],
       },
       //LENA ALB
       {
         chatId: "6227152193",
         token: "7926269233:AAFOApI-YISLrblBEfrogo22aiBuf_QV5gQ",
         items: [
-          "listing",
+          "order",
+          "feedback_form",
           // 'cocktail', 'register', 'feedback_form', 'price_request', 'login', `order`
         ],
       },
@@ -77,6 +65,7 @@ export const ALBERTO_BINI_SALES = {
         items: [
           // 'listing', 'cocktail', 'register', 'feedback_form', 'price_request', 'login',
           `order`,
+          "feedback_form",
         ],
       },
     ],
