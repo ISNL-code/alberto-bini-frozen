@@ -10,7 +10,6 @@ import { Color } from "constants/colors";
 import { DialogWindowType } from "layouts/hooks/useFormsApp";
 import { CatalogContextInterface } from "types/outlet_context_models";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
-import { StoreType } from "store_constants/types";
 
 interface Props {
   productDetails: ProductDataInterface;
@@ -19,7 +18,7 @@ interface Props {
 
 const SizesDetails = ({ productDetails, isShown }: Props) => {
   const { OPTIONS } = STORE_CONFIG;
-  const { PLAN_OPTIONS, STORE_TYPE } = OPTIONS;
+  const { PLAN_OPTIONS } = OPTIONS;
   const {
     string,
     handleOpenDialog,
@@ -118,30 +117,27 @@ const SizesDetails = ({ productDetails, isShown }: Props) => {
             </Box>
           </DetailsSection>
 
-          {(STORE_TYPE === StoreType?.sales && (
-            <Box
-              mt={1}
-              p={1.5}
-              display="flex"
-              alignItems="center"
-              bgcolor="#fdecea"
-              border="1px solid #f5c6cb"
-              borderRadius={1}
+          <Box mt={0.5} ml={1}>
+            <Typography sx={{ fontSize: 12, color: "darkgreen" }}>
+              {string?.size_selection_is_only_available_during_checkout}
+            </Typography>
+          </Box>
+          <Box
+            mt={1}
+            p={1.5}
+            display="flex"
+            alignItems="center"
+            bgcolor="#fdecea"
+            border="1px solid #f5c6cb"
+            borderRadius={1}
+          >
+            <WarningAmberIcon sx={{ color: "#d32f2f", mr: 1 }} />
+            <Typography
+              sx={{ fontSize: 14, color: "#d32f2f", fontWeight: 500 }}
             >
-              <WarningAmberIcon sx={{ color: "#d32f2f", mr: 1 }} />
-              <Typography
-                sx={{ fontSize: 14, color: "#d32f2f", fontWeight: 500 }}
-              >
-                {string?.manager_check_size}
-              </Typography>
-            </Box>
-          )) || (
-            <Box my={0.5} ml={1}>
-              <Typography sx={{ fontSize: 14, color: "red" }}>
-                {string?.size_selection_is_only_available_during_checkout}
-              </Typography>
-            </Box>
-          )}
+              {string?.larger_sizes_have_higher_price}
+            </Typography>
+          </Box>
         </Box>
       </>
     );
