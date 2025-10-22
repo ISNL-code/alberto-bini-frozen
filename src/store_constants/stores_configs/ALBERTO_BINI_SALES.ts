@@ -69,7 +69,7 @@ export const ALBERTO_BINI_SALES = {
         ],
       },
     ],
-    product_image_options: { width: 6, height: 9 },
+    product_image_options: { width: 6.6, height: 9 },
     main_price_multiplication: 1,
     sale_price_multiplication: 1,
     currency_multiplication: 1,
