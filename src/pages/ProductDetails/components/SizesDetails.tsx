@@ -117,26 +117,40 @@ const SizesDetails = ({ productDetails, isShown }: Props) => {
             </Box>
           </DetailsSection>
 
-          <Box mt={0.5} ml={1}>
-            <Typography sx={{ fontSize: 12, color: "darkgreen" }}>
-              {string?.size_selection_is_only_available_during_checkout}
-            </Typography>
-          </Box>
-          <Box
-            mt={1}
-            p={1.5}
-            display="flex"
-            alignItems="center"
-            bgcolor="#fdecea"
-            border="1px solid #f5c6cb"
-            borderRadius={1}
-          >
-            <WarningAmberIcon sx={{ color: "#d32f2f", mr: 1 }} />
-            <Typography
-              sx={{ fontSize: 14, color: "#d32f2f", fontWeight: 500 }}
+          <Box mt={2} display="flex" flexDirection="column" gap={1.2}>
+            {/* Інформація про вибір розміру */}
+            <Box
+              p={1.5}
+              display="flex"
+              alignItems="center"
+              bgcolor="#e8f5e9"
+              border="1px solid #c8e6c9"
+              borderRadius={2}
             >
-              {string?.larger_sizes_have_higher_price}
-            </Typography>
+              <WarningAmberIcon sx={{ color: "#43a047", mr: 1 }} />
+              <Typography
+                sx={{ fontSize: 14, color: "#2e7d32", fontWeight: 500 }}
+              >
+                {string?.size_selection_is_only_available_during_checkout}
+              </Typography>
+            </Box>
+
+            {/* Інформація про більшу ціну для великих розмірів */}
+            <Box
+              p={1.5}
+              display="flex"
+              alignItems="center"
+              bgcolor="#fff3e0"
+              border="1px solid #ffe0b2"
+              borderRadius={2}
+            >
+              <WarningAmberIcon sx={{ color: "#f57c00", mr: 1 }} />
+              <Typography
+                sx={{ fontSize: 14, color: "#e65100", fontWeight: 500 }}
+              >
+                {string?.larger_sizes_have_higher_price}
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </>
