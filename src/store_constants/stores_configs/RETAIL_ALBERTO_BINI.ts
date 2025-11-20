@@ -7,7 +7,7 @@ export const RETAIL_ALBERTO_BINI = {
   required_registration: false,
   URL: ["https://alberto-bini-shop.netlify.app", "https://alberto-bini.com"],
   web_lang: "uk", // html lang
-  store_name: "АБ RETAIL_MY",
+  store_name: "Розничный Каталог Новый",
   store_code: "albertobini_retailer",
   base_url: "https://kremen-belts.com/api",
   app_lang: "ua",
@@ -34,7 +34,7 @@ export const RETAIL_ALBERTO_BINI = {
       {
         token: "8118561264:AAFxhkoULSi9abzaTt9nHNFM6RCfBbBUV1M",
         chatId: "480774886",
-        items: ["order", "feedback_form"],
+        items: ["order", "feedback_form", "listing"],
       },
       //LENA ALB
       {
@@ -63,7 +63,7 @@ export const RETAIL_ALBERTO_BINI = {
     currency_multiplication: 1,
     retail_price_multiplication: 1,
     min_items_to_buy: 1,
-    store_type: StoreType?.default,
+    store_type: StoreType?.sales,
     home_page_active: true,
     informative_page_active: true,
     custom_currency: "₴",
